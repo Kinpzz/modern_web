@@ -10,42 +10,42 @@ body {
 p:first-letter {
 	font-size: 1.5em;
 }
-h1,h2 {
+.title, .content-title {
 	color: #A4A400;
 	background-color: #F0F0F0;
 	text-decoration: underline;
 	letter-spacing: 0.2em;
 }
-h1 {
+.title {
 	font-family: "Century Gothic";
 	font-weight: bold;
 	font-size: 22pt;
 	text-align: center;
 }
-h2 {
+.content-title {
 	font-family: "Verdana";
 	font-weight: normal;
 	font-size: 18pt;
 	text-align: left;
 }
-ul {
+.more ul {
 	list-style: none;
 }
 
-li {
+.more li {
 	float: left;
-	margin: 10pt;
+	margin: 20pt;
 	display: inline;
 	border:1pt solid #CCC;
 }
-li img {
+.more img {
 	width: 150pt;
 	height: 130pt;
 	padding: 5pt;
 	border: 0;
 	display: block;
 }
-li .name {
+.name {
 	line-height: 20pt;
 	color: #666;
 	display: block;
@@ -54,9 +54,12 @@ li .name {
 a:hover {
 	color:#A4A400;
 }
-#goal {
+.header {
 	font-size: 15pt;
 	text-align: center;
+}
+.center {
+	font-style: italic;
 }
 #lemon {
 	text-align: center;
@@ -64,18 +67,15 @@ a:hover {
 #lemon:hover {
 	opacity: 0.8;
 }
-#more {
-	text-align: center;
-}
-#today a{
+#lemon a{
 	font-size: 15pt;
 	font-style: normal;
 }
-#today {
-	font-style: italic;
+#more {
+	text-align: center;
 }
 #come {
-	padding-top: 200pt;
+	padding-top: 220pt;
 	padding-bottom: 10pt;
 	font-size: 20pt;
 	text-align: center;

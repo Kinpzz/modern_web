@@ -6,34 +6,34 @@ body {
 	font-size: 11pt;
 	font-family: "Georgia";
 }
-a {
-	color: #A4A400;
-}
-h1,h2 {
+.title, .content-title {
 	color: #A4A400;
 	background-color: #F0F0F0;
 	text-decoration: underline;
 	letter-spacing: 0.2em;
 }
-h1 {
+.title {
 	font-family: "Century Gothic";
 	font-weight: bold;
 	font-size: 22pt;
 	text-align: center;
 }
-h2 {
+.content-title {
 	font-family: "Verdana";
 	font-weight: normal;
 	font-size: 18pt;
 	text-align: left;
 }
-img {
+.footer img {
 	border: 0;
 }
-ul {
+.footer a {
+	color: #A4A400;
+}
+.content ul {
 	list-style: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
 }
-#user {
+.user {
 	font-style: italic;
 	background-color: #FFFFC8;
 }
