@@ -1,0 +1,164 @@
+/* ----- body overall style -----*/
+body {
+	margin: 0 0 0 0;
+	font-size: 8pt;
+	font-family: Verdana;
+	background: url(image/background.png);
+	background-repeat: repeat;
+}
+
+/* ----- the header style ----- */
+.header {
+	height: 50px;
+}
+.header .banner {
+	text-align: center;
+	background: url(image/bannerbackground.png);
+	background-size: auto 50px;
+	background-repeat: repeat-x;
+}
+
+/* ----- the content style ----- */
+.content {
+	margin: 0;
+	border-color: red;
+}
+
+/* --- the title of the content --- */
+.content .title {
+	margin: 0;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: "Tahoma";
+	text-align: center;
+}
+
+/* --- the center part of the content --- */
+.content .center {
+	width: 800px;
+	height: 931px;
+	border: 4px solid gray;
+	margin: auto auto auto auto;
+}
+
+/* -- the rotten part -- */
+.content .center .rotten {
+	width: 550px;
+	margin: 0 0 0 0;
+	background: url(image/rottenbackground.png);
+	background-repeat: repeat-x;
+	background-size: auto 83px;
+}
+/* - the rotten-img - */
+.content .center .rotten .rotten-img {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	float: left;
+	height: 83px;
+}
+.content .center .rotten,.rotten-img,.rotten-more {
+	float: left;
+	height: 83px;
+}
+/*  the rotten-rate */
+.content .center .rotten .rotten-more #rotten-rate {
+	padding-top: 8px;
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+	font-family: "Tahoma";
+}
+/* the rotten reviews in total */
+.content .center .rotten .rotten-more #rotten-reviews {
+	padding-top: 60px;
+	color: white;
+}
+#rotten-rate, #rotten-reviews {
+	display: inline-block;
+	float: left;
+}
+
+/* --- the right part of center content --- */
+.content .center .right {
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+	font-family: "Arial";
+}
+.content .center .right .overview-info {
+	padding: 10px 10px 10px 10px;
+}
+.content .center .right .overview-info dt {
+	font-weight: bold;
+}
+.content .center .right .overview-info dd {
+	margin-bottom: 1em;
+}
+
+/* --- the left part of the center content for reviews ---*/
+.content .center .left {
+	width: 550px;
+	height: 906px;
+}
+/* -- the left column -- */
+.content .center .left .reviews-left {
+	margin-right: 2%;
+	margin-left: 2%;
+	width: 47%;
+	float: left;
+}
+/* -- the right column -- */
+.content .center .left .reviews-right {
+	margin-left: 0;
+	margin-right: 2%;
+	width: 47%;
+	float: left;
+}
+/* reviews */
+.content .center .left .reviews {
+	border: 2px solid gray;
+	padding: 8px 8px 8px 8px;
+	background-color: #E1D697;
+	font-weight: bold;
+	word-break: keep-all;
+}
+.content .center .left .reviews img {
+	float: left;
+	margin-right: 5px;
+}
+.content .center .left .reviews q {
+	font-weight: bold;
+}
+
+/* reviewer's personal info */
+.content .center .left .reviewer-info {
+	margin-bottom: 3em;
+}
+.content .center .left .reviewer-info img{
+	float: left;
+	margin-right: 5px;
+}
+.content .center .left .reviewer-place {
+	font-style: italic;
+}
+/* --- the footer of the center content style --- */
+.content .center .footer {
+	height: 20px;
+	background-color: #A2B964;
+	padding-top: 5px;
+	padding-bottom: 0;
+}
+.content .center .footer p {
+	width: 80px;
+	height: 15px;
+	margin: 0 auto 0 auto;
+}
+
+/* ----- w3c validator style ----- */
+#validator {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
