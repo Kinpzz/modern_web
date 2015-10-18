@@ -113,9 +113,10 @@ body {
 /* reviews */
 .content .center .left .reviews {
 	border: 2px solid gray;
-	padding: 8px 8px 8px 8px;
+	padding: 8px;
 	background-color: #E1D697;
 	font-weight: bold;
+	overflow: hidden;
 }
 .content .center .left .reviews img {
 	float: left;
