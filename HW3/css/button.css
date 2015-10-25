@@ -1,0 +1,228 @@
+/* Author by Yan Pengxiang ,14331327 */
+/*-- at plus button container to control the hover place --*/
+/* the place before hover */
+#at-plus-container {
+	position: absolute;
+	top:40%;
+	left: 44%;
+	width: 0;
+	height: 0;
+}
+/* once hover the place grows */
+#at-plus-container:hover {
+	width: 150px;
+	height: 220px;
+	border-top-right-radius: 30%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 30% 70%;
+}
+
+/*-- at-plus button --*/
+/* at-plus botton before hover */
+#at-plus {
+	background-image: url(../assets/images/atplus_white.png);
+	background-size: 20px 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(155, 155, 210, 1);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	position: absolute;
+	top: 150px;
+	left: 67px;
+	transition: all 0.5s ease-in;
+	transition-delay: 0.7s;
+}
+/* at-plus botton when hover */
+#at-plus-container:hover #at-plus {
+	width: 50px;
+	height: 50px;
+	background-image: url(../assets/images/atplus_green.png);
+	background-size: 36px 27px;
+	background-color: rgba(48, 63, 159, 1);
+	top: 135px;
+	left: 57px;
+	transition-delay: 0s;
+}
+
+/* -- info-bar --*/
+#info-bar {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 150px;
+	left: 67px;
+}
+/*- the big circle of info bar before hover-*/
+#info-bar .info {
+	position: absolute;
+	font-family: Arial;
+	width: 32px;
+	height: 32px;
+	margin: 50px;
+	top : -100px;
+	left: -50px;
+	transition: all 0.5s ease-in;
+	border-radius: 50%;
+	background-color: rgb(126, 126, 126);
+	opacity: 0;
+	overflow: hidden;
+}
+/*- the big circle of info bar when hover-*/
+#at-plus-container:hover #info-bar .info{
+	top: -156px;
+	width: 132px;
+	height: 132px;
+	margin: 0;
+	opacity: 1;
+}
+/* the details of info bar */
+#info-bar .info .page {
+	list-style: none;
+	position: absolute;
+}
+
+#info-bar .info .user {
+	top: 12px;
+	left: 43px;
+}
+#info-bar .info .user span {
+	font-size: 17px;
+	color: white;
+	position: absolute;
+	left: 29px;
+	top: 1px;
+}
+
+#info-bar .info .comment {
+	top: 50px;
+	left: 29px;
+}
+
+#info-bar .info .comment img {
+	height: 28px;
+	width: 28px;
+}
+
+#info-bar .info .comment span {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top: -8px;
+	left: 38px;
+}
+
+#info-bar .info .posted {
+	top: 90px;
+	left: 18px;
+}
+#info-bar .info .posted span {
+	position: absolute;
+	top: 0;
+	left: 32px;
+}
+
+#info-bar .info .like {
+	top: 90px;
+	left: 71px;
+}
+#info-bar .info .like span {
+	position: absolute;
+	top: 0px;
+	left: 32px;
+}
+
+#info-bar .info .mine {
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(51, 213, 144);
+	list-style: none;
+	position: absolute;
+}
+/* the details of info bar ends here */
+
+/*-- the style of control ring --*/
+#control-ring {
+	list-style: none;
+}
+
+/* the comman style of control ring button */
+/* the comman style of control ring button before hover */
+#control-ring .button {
+	width: 32px;
+	height: 32px;
+	opacity: 0;
+	background-color: rgb(104, 104, 104);
+	border-radius: 50%;
+	position: absolute;
+	top: 147px;
+	left: 62px;
+	transition: all 0.5s ease-in;
+}
+#control-ring .button img{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	opacity: 0;
+}
+/* the specific style of unread message botton */
+#control-ring .message .unread{
+	display: block;
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	top: -5px;
+	left: 22px;
+	text-align: center;
+	font-size: 13px;
+	color: white;
+	line-height: 1.7;
+}
+
+
+/* the comman style of control ring button when hover */
+#at-plus-container:hover #control-ring .button {
+	opacity: 1;
+}
+#at-plus-container:hover #control-ring .button img {
+	opacity: 1;
+}
+#at-plus-container:hover #control-ring .mask {
+	top: 110px;
+	left: 5px;
+}
+
+/* the detail postions of button elment when hover*/
+#at-plus-container:hover #control-ring .history {
+	top: 146px;
+	left: -6px;
+}
+
+#at-plus-container:hover #control-ring .message {
+	top: 180px;
+	left: 8px;
+}
+
+#at-plus-container:hover #control-ring .message .unread {
+	opacity: 1;
+}
+
+#at-plus-container:hover #control-ring .setting {
+	top: 200px;
+	left: 41px;
+}
+#at-plus-container:hover #control-ring .signin {
+	top: 198px;
+	left: 83px;
+}
+#at-plus-container:hover #control-ring .signout {
+	display: none;
+}
