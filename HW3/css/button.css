@@ -34,6 +34,8 @@
 	left: 67px;
 	transition: all 0.5s ease-in;
 	transition-delay: 0.7s;
+	-webkit-transition: all 0.5s ease-in;
+	-webkit-transition-delay: 0.7s;
 }
 /* at-plus botton when hover */
 #at-plus-container:hover #at-plus {
@@ -45,6 +47,7 @@
 	top: 135px;
 	left: 57px;
 	transition-delay: 0s;
+	-webkit-transition-delay: 0s;
 }
 
 /* -- info-bar --*/
@@ -62,9 +65,10 @@
 	width: 32px;
 	height: 32px;
 	margin: 50px;
-	top : -100px;
+	top : -53px;
 	left: -50px;
 	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
 	border-radius: 50%;
 	background-color: rgb(126, 126, 126);
 	opacity: 0;
@@ -78,15 +82,29 @@
 	margin: 0;
 	opacity: 1;
 }
+
+#at-plus-container .info ul {
+	position: absolute;
+	top: 21px;
+	left: -42px;
+	opacity: 0; 
+}
+#at-plus-container:hover .info ul {
+	top: 120px;
+	left: 0;
+	opacity: 1;
+}
 /* the details of info bar */
 #info-bar .info .page {
 	list-style: none;
 	position: absolute;
+	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
 }
 
 #info-bar .info .user {
-	top: 12px;
-	left: 43px;
+	top: -23px;
+	left: 35px;
 }
 #info-bar .info .user span {
 	font-size: 17px;
@@ -97,8 +115,8 @@
 }
 
 #info-bar .info .comment {
-	top: 50px;
-	left: 29px;
+	top: 15px;
+	left: 21px;
 }
 
 #info-bar .info .comment img {
@@ -116,8 +134,8 @@
 }
 
 #info-bar .info .posted {
-	top: 90px;
-	left: 18px;
+	top: 52px;
+	left: 10px;
 }
 #info-bar .info .posted span {
 	position: absolute;
@@ -126,8 +144,8 @@
 }
 
 #info-bar .info .like {
-	top: 90px;
-	left: 71px;
+	top: 52px;
+	left: 63px;
 }
 #info-bar .info .like span {
 	position: absolute;
@@ -141,6 +159,26 @@
 	color: rgb(51, 213, 144);
 	list-style: none;
 	position: absolute;
+	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+}
+
+/* the change of the element of the info bar when hover */
+#at-plus-container:hover #info-bar .info .user {
+	top: -126px;
+	left: 42px;
+}
+#at-plus-container:hover #info-bar .info .comment {
+	top: -88px;
+	left: 28px;
+}
+#at-plus-container:hover #info-bar .info .posted {
+	top: -48px;
+	left: 20px;
+}
+#at-plus-container:hover #info-bar .info .like {
+	top: -48px;
+	left: 72px;
 }
 /* the details of info bar ends here */
 
@@ -161,6 +199,7 @@
 	top: 147px;
 	left: 62px;
 	transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
 }
 #control-ring .button img{
 	width: 16px;

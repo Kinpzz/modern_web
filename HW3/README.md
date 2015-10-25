@@ -2,4 +2,7 @@
 * 完成作业3
 * 仍然存在info-bar元素从右上角上来问题，未解决定位问题。
 
-<img src="Screenshot.png" alt="effect-picture"></img>
+#### 2015.10.25 晚
+* 改进了info-bar元素从右上进问题
+* 添加了webkit配置
+* 但是仍然存在消失的时候只能瞬间消失info-bar内容
