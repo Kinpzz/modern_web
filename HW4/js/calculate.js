@@ -22,7 +22,8 @@ window.onload = function() {
 					outcome = 0;
 				}
 				// 使用正则表达式排除多个除号合法的情况
-				if (/\/+/gi.test(process.value) == true) {
+				var re = /\/{2,}/;
+				if (re.exec(process.value) != null) {
 					alert("非法输入，请重新输入");
 					process.value = '';
 					result.value = '0';
