@@ -59,7 +59,7 @@
 	width: 261px;
 	height: 70px;
 	border: 0;
-	font-size: 45px;
+	font-size: 55px;
 	line-height: 1.4;
 	font-family: "pixel", Verdana, sans-serif;
 	text-align: right;
@@ -77,10 +77,11 @@
 	width: 261px;
 	height: 50px;
 	border: 0;
-	font-size: 25px;
+	font-size: 35px;
 	font-family: "pixel", Verdana, sans-serif;
 	text-align: right;
 	background-color: white;
+	padding-bottom: 20px;
 }
 
 /* --- button area of the calculator -- */
@@ -94,7 +95,7 @@
 #calculator-button-area .button input {
 	display: block;
 	font-family: "pixel", Verdana, sans-serif;
-	font-size: 25px;
+	font-size: 30px;
 	border: 0;
 	background-color: white;
 	width: 53px;
@@ -153,7 +154,7 @@
 }
 #calculator-button-area .sign input{
 	height: 23px;
-	line-height: 0.8;
+	line-height: 0.6;
 }
 /* -- specific style of add button -- */
 #calculator-button-area #operation-add {

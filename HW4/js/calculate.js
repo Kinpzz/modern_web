@@ -19,8 +19,7 @@ window.onload = function() {
 					var outcome = eval(process.value,10).toFixed(8);
 				} catch(e) {
 					alert("非法输入，请重新输入");
-					process.value = '';
-					result.value = '0';
+					outcome = 0;
 				}
 				// 使用正则表达式排除多个除号合法的情况
 				if (/\/+/gi.test(process.value) == true) {
@@ -36,6 +35,9 @@ window.onload = function() {
 					result.value = parseFloat(outcome);
 					// 运行完等于号将结果放回输入栏
 					process.value = result.value;
+					if (process.value == '0') {
+						process.value = '';
+					}
 				}
 			} else if (this.value == 'DEL') {
 				// 删除最后一个字符串来实现退格功能
