@@ -13,6 +13,16 @@ window.onload = function() {
 				process.value = '';
 				result.value = '0';
 			} else if (this.value == '=') {
+				// 用正则表达式将开头为0的数字，如020转化为20，避免八进制错误
+				var temp = process.value;
+				temp = temp.replace(/^0+/g, "");
+				temp = temp.replace(/\+0+/g, "+");
+				temp = temp.replace(/-0+/g, "-");
+				temp = temp.replace(/\*0+/g, "*");
+				temp = temp.replace(/\/0+/g, "/");
+				temp = temp.replace(/%0+/g, "%");
+				temp = temp.replace(/\(0+/g, "(");
+				process.value = temp;
 				// 使用正则表达式排除多个除号合法的情况
 				var re = /\/{2,}/;
 				if (re.exec(process.value) != null) {
@@ -24,10 +34,10 @@ window.onload = function() {
 					process.value = '';
 					result.value = '0';
 				} else {
-				// 利用eval错误时抛出的异常来判断是否非法输入
+				    // 利用eval错误时抛出的异常来判断是否非法输入
 					try {
 						// 保留部分精度以去除精度误差
-						var outcome = eval(process.value,10).toFixed(8);
+						var outcome = eval(process.value, 8).toFixed(8);
 					} catch(e) {
 						alert("非法输入，请重新输入");
 						outcome = 0;
@@ -45,7 +55,7 @@ window.onload = function() {
 				process.value = process.value.substring(0, process.value.length-1);
 			} else {
 				// 控制输入长度
-				if (process.value.length > 19) {
+				if (process.value.length > 14) {
 					alert("输入过长，无法输入");
 				} else {
 					process.value += this.value;
