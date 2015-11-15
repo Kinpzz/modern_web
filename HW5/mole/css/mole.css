@@ -1,0 +1,77 @@
+html {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/*---- title ----*/
+.title {
+	font-size: 25px;
+}
+
+div.title {
+	height: 70px;
+	line-height: 2;
+	text-align: center;
+}
+/*---- title end ----*/
+
+/*---- info ----*/
+div.info {
+	height: 80px;
+	text-align: center;
+}
+/*--- the input and button in info area ---*/
+div.info-function {
+	height: 50px;
+	width: 300px;
+	margin: auto;
+	line-height: 1.8;
+}
+.info-function input {
+	width: 20px;
+}
+/*--- detail position setting ---*/
+#start-button {
+	float: left;
+}
+#time-screen {
+	float: right;
+}
+#state-screen {
+	float: left;
+}
+#state-screen input {
+	width: 120px;
+}
+#score-screen {
+	float: right;
+}
+/*---- info end ----*/
+
+/*---- mole game operation area ----*/
+div.mole {
+	height: 160px;
+	width: 240px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 30px auto 30px auto;
+	padding-top: 10px;
+}
+
+.hole {
+	margin: 6px;
+}
+/*---- mole game operation area end ----*/
+
+/*---- instruction area ----*/
+div.instruction {
+	width: 680px;
+	margin: auto;
+}
+.instruction {
+	font-family: Courier, Geneva, sans-serif;
+	font-size: 15px;
+}
+.instruction p:first-child{
+	font-weight: bold;
+}
+/*---- instruction area end ----*/

@@ -1,0 +1,176 @@
+html {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+	font-weight: normal;
+}
+
+.title {
+    font-family: Georgia, serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.rule {
+	font-family: Georgia, serif;
+	font-size: 24px;
+}
+
+div.title, div.rule {
+	margin: 15px;
+}
+
+/*------  Game Area -----*/
+div.game-body {
+	height: 368px;
+	width: 617px;
+	position: absolute;
+	top: 150px;
+	left: 26%;
+}
+/*-----  start and end node area -----*/
+.node {
+	height: 49px;
+	width: 49px;
+	position: absolute;
+	top: 253px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+}
+#start {
+	background-color: rgb(133,251,133);
+	left: 0;
+}
+#end {
+	background-color: rgb(107,134,251);
+	right: -1px;
+}
+/*----- Cheat validar -----*/
+
+#is-cheat {
+	position: absolute;
+	height: 100px;
+	width: 52px;
+	top: 220px;
+	right: -55px;
+}
+/*-----  Walls area -----*/
+
+/*---- comman style of all walls ----*/
+
+/*--- normal wall ---*/
+div.wall {
+	background-color: rgb(238,238,238);
+	border: 1px solid black;
+	position: absolute;
+}
+/* the example wall in order to prevent js event so change its calss name */
+div.example-wall {
+	background-color: rgb(238,238,238);
+	border: 1px solid black;
+	position: absolute;
+}
+/*--- crash wall ---*/
+.crash-wall {
+	position: absolute;
+	background-color: rgb(226,36,22);
+	border: 1px solid black;
+	-webkit-transition: 0.2s;
+}
+
+/*--- style of wall of top area ---*/
+div.wall-up {
+	height: 65px;
+	width: 187px;
+	top: 0;
+}
+#wall-left-up {
+	border-right: 0;
+	border-bottom: 0;
+	left: 0;
+}
+#wall-center-up {
+	width: 246px;
+	border-right: 0;
+	border-left: 0;
+	left: 187px;
+}
+#wall-right-up {
+	border-bottom: 0;
+	border-left: 0;
+	left: 430px;
+}
+
+/*--- style of wall of middle area ---*/
+div.wall-mid {
+	height: 185px;
+	width: 185px;
+	top: 66px;
+}
+#wall-left-mid {
+	border-top: 0;
+	left: 0;
+}
+#wall-center-mid {
+	width: 122px;
+	border-bottom: 0;
+	top: 120px;
+	left: 246px;
+}
+#wall-right-mid {
+	border-top: 0;
+	left: 431px;
+}
+
+/*--- style of wall of bottom area ---*/
+div.wall-down {
+	height: 61px;
+	bottom: 0;
+}
+#wall-left-down {
+	width: 246px;
+	border-right: 0;
+	left: 0;
+}
+#wall-center-down {
+	width: 123px;
+	border-right: 0;
+	border-left: 0;
+	border-top: 0;
+	left: 246px;
+}
+#wall-right-down {
+	width: 248px;
+	border-left: 0;
+	left: 369px;
+}
+/*----- Walls area end -----*/
+
+/*------  Game Area end -----*/
+
+/*------ Attention area ------*/
+div.attention {
+	width: 735px;
+	height: 141px;
+	text-align: left;
+	position: absolute;
+	top: 526px;
+	left: 22%;
+}
+
+/* the example wall in order to prevent js event so change its calss name */
+.attention .example-wall {
+	background-color: rgb(238,238,238);
+	border: 1px solid black;
+	position: absolute;
+	width: 126px;
+	height: 33px;
+	top: 74px;
+	left: 40%;
+}
+.attention .wish {
+	position: absolute;
+	top: 123px;
+	left: 0;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Author by Yan Pengxiang, 14331327, group 19 on 13th Nov -->
+<html>
+	<head>
+		<title>Mole!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/mole.css">
+		<script type="text/javascript" src="js/mole.js"></script>
+	</head>
+	<body>
+		<!-- title -->
+		<div class="title">Whac-a-mole</div>
+
+		<!-- info area -->
+		<div class="info">
+
+			<span>Test your skill. How many boxes(moles) can you check(hit) in 30 seconds?
+			</span>
+
+			<div class="info-function">
+				<span id="start-button">
+					<button class="start" id="start-screen-input" value="2">Start Game | Stop Game</button>
+				</span>
+				<span id="time-screen">
+					Time:
+					<input type="text" name="time" value="0" id="time-screen-input">
+				</span>
+				<span id="state-screen">
+					<input type="text" name="state" value="Game Over" id="state-screen-input">
+				</span>
+				<span id="score-screen">
+					Score:
+					<input type="text" name="score" value="0" id="score-screen-input">
+				</span>
+			</div>
+
+		</div>
+		<!-- info area end-->
+
+		<!-- mole game operation area -->
+		<div class="mole" id="more-area"></div>
+		<!-- mole game operation area end-->
+
+		<!-- instruction area -->
+		<div class="instruction">
+			<p>Instruction:<p>
+			<!-- instruction list -->
+			<ol>
+				<li>Click on the radio buttons(moles) as they are selected randomly by the computer.
+				</li>
+				<li>1 point per hit, minus 1 point per miss.
+				</li>
+			</ol>
+		</div>
+		<!-- instruction area end-->
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Author by Yan Pengxiang, 14331327, group 19 on 13th Nov -->
+<html>
+	<head>
+		<title>Maza!</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/maze.css">
+		<script type="text/javascript" src="js/maze.js"></script>
+	</head>
+	<body>
+
+		<div class="title">The Amazing Mouse Maze!</div>
+
+		<div class="rule">Move your mouse over the "S" to begin.</div>
+
+		<!-- this div is about the infomation of the current game, it will renew when event happened -->
+		<div id="result-info" class="rule"></div>
+
+		<div class="game-body" id="game-body">
+			<!-- the start and end node -->
+			<div id="start" class="node">S</div>
+			<div id="end" class="node">E</div>
+			<!-- the walls are divided to different areas -->
+			<!-- top area -->
+			<div class="wall wall-up" id="wall-left-up"></div>
+			<div class="wall wall-up" id="wall-center-up"></div>
+			<div class="wall wall-up" id="wall-right-up"></div>
+			<!-- middle area -->
+			<div class="wall wall-mid" id="wall-left-mid"></div>
+			<div class="wall wall-mid" id="wall-center-mid"></div>
+			<div class="wall wall-mid" id="wall-right-mid"></div>
+			<!-- bottom area -->
+			<div class="wall wall-down" id="wall-left-down"></div>
+			<div class="wall wall-down" id="wall-center-down"></div>
+			<div class="wall wall-down" id="wall-right-down"></div>
+
+			<!-- an extra div to judge the cheating -->
+			<div id="is-cheat"></div>
+		</div>
+		<!-- the game body ends here -->
+
+		<!-- something you need to pay attention to when playing the game -->
+		<div class="attention">
+			<p>The object of this game is to guide the mouse cursor through the start area and get to the end area. Be sure to avoid the wall:</p>
+			<div class="example-wall"></div>
+			<div class="wish">Good luck!</div>
+		</div>
+
+	</body>
+</html>
