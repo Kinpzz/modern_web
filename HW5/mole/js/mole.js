@@ -96,7 +96,7 @@ function gameOver() {
 		area.children[i].removeEventListener('click', killMole);
 	}
 	// 提示游戏结果
-	var str = 'Game Over! Final score: ' + score.value;
+	var str = 'Game Over!\nFinal score: ' + score.value;
 	alert(str);
 
 }

@@ -1,4 +1,7 @@
 window.onload = function() {
+	//一开始不经过起点到终点看作作弊
+	var end = document.getElementById('end');
+	end.addEventListener('mouseover', isCheat);
 	//为开始按钮添加了一个监视器,由开始出发这个游戏的开关
 	var start = document.getElementById('start');
 	start.addEventListener('mouseover', startListener);
@@ -55,6 +58,9 @@ function delEndListener(str) {
 
 //start监视器被触发调用的函数
 function startListener() {
+	//去除对一开始不过起点到终点的判断
+	var end = document.getElementById('end');
+	end.removeEventListener('mouseover', isCheat);
 	//为每一个墙壁添加监视器
 	addWallListener();
 	//添加结束的监视器
