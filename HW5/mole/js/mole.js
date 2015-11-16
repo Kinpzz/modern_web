@@ -56,10 +56,13 @@ function mole() {
 
 		if (start.value == 2) {
 			state.value = "Game Over";
+			start.innerHTML = "Start Game";
 		} else if (start.value == 1) {
 			state.value = "Playing";
+			start.innerHTML = "Pause Game";
 		} else if (start.value == 0) {
 			state.value = "Pause";
+			start.innerHTML = "Continue Playing";
 		}
 
 		// 游戏从结束状态到开始
@@ -86,7 +89,8 @@ function gameOver() {
 	// 更改按键值和状态值为结束
 	start.value = 2;
 	state.value = "Game Over";
-
+	start.innerHTML = "Start Game";
+	
 	// 清除击杀老鼠得分监听器，采用遍历的方法消除那只未被消灭的地鼠的监听器
 	for (var i = 0; i < 60; i++) {
 		area.children[i].removeEventListener('click', killMole);
