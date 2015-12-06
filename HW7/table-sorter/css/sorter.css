@@ -1,0 +1,51 @@
+html {
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+}
+
+/*---- table style ---*/
+table {
+	border: 1px solid rgb(221,221,221);
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid rgb(221, 221, 221);
+	font-size: 18px;
+}
+#todo {
+	width: 530px;
+}
+#staff {
+	width: 430px;
+}
+/*---- color -----*/
+.thead {
+	color: white;
+	font-weight: bold;
+	background-color: rgb(2,27,125);
+}
+/*- odd row -*/
+.odd {
+	background-color: rgb(221,221,221);
+}
+/*---- color ends here----*/
+
+/*---- dom ----*/
+.sorted {
+	background-color: rgb(165, 174, 252);
+	background-repeat: no-repeat;
+	background-position: 100%;
+}
+.descend {
+	background-image: url(../image/descend.png);
+}
+
+.ascend {
+	background-image: url(../image/ascend.png);
+}
+
+
+
+
+
+
