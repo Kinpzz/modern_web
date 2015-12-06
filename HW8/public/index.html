@@ -1,0 +1,41 @@
+<!--Author by Yan Pengxiang 14331327, group 19, on 5th Dec -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>注册</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/register.css">
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/register.js"></script>
+	</head>	
+	<body>
+		<div class="reg-body">
+			<div class="user-image">
+				<img src="../image/user.jpg" alt="user image" />
+			</div>
+			<div class="info-header">欢迎注册</div>
+			<div class="reg-form">
+				<form action="/upload" method="post">
+					<div class="group-input">
+						<div class="input-wrapper">
+							<input id="user-name" type="text" name="username" placeholder="用户名"/>
+						</div>
+						<div class="input-wrapper">
+							<input id="student-number" type="text" name="studentnumber" placeholder="学号(8位)"/>
+						</div>
+						<div class="input-wrapper">
+							<input id="tel-num" type="text" name="tel" placeholder="手机号(11位)"/>
+						</div>
+						<div class="input-wrapper">
+							<input id="email" type="text" name="email" placeholder="邮箱" />	
+						</div>
+					</div>
+					<div class="input-button">
+						<input id="reset-info" class="button" type="button" value="重置"/>
+						<input id="submit-info" class="button" type="button" value="注册"/>				
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
