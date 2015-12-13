@@ -1,0 +1,213 @@
+/* Author by Yan Pengxiang ,14331327 */
+/*-- at plus button container to control the hover place --*/
+/* the place before hover */
+html {
+    font-family: Arial;
+}
+#at-plus-container {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+    margin-left: -80px;
+}
+/* once hover the place grows */
+#at-plus-container:hover {
+    width: 150px;
+    height: 230px;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30% 70%;
+    border-bottom-left-radius: 20%;
+}
+
+/*-- at-plus button --*/
+/* at-plus botton before hover */
+#at-plus {
+    position: absolute;
+    top: 150px;
+    left: 67px;
+
+    width: 25px;
+    height: 25px;
+
+    -webkit-transition: all .6s ease-in;
+            transition: all .6s ease-in;
+    -webkit-transition-delay: .8s;
+            transition-delay: .8s;
+
+    border-radius: 50%;
+    background-color: rgba(155, 155, 210, 1);
+    background-image: url(../assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 15px;
+}
+/* at-plus botton when hover */
+#at-plus-container:hover #at-plus {
+    top: 135px;
+    left: 57px;
+
+    width: 50px;
+    height: 50px;
+
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+
+    background-color: rgba(48, 63, 159, 1);
+    background-image: url(../assets/images/atplus_green.png);
+    background-size: 36px 27px;
+}
+
+
+/*- the big circle of info bar before hover-*/
+
+/*- the big circle of info bar when hover-*/
+#at-plus-container:hover #info-bar {
+    top: -10px;
+    left: 17px;
+
+    width: 132px;
+    height: 132px;
+}
+
+#result {
+    font-size: 40px;
+    line-height: 3.2;
+
+    text-align: center;
+
+    color: rgb(43,224,158);
+}
+
+/* the details of info bar ends here */
+
+/*-- the style of control ring --*/
+#control-ring {
+    list-style: none;
+}
+
+/* the comman style of control ring button */
+/* the comman style of control ring button before hover */
+.button {
+    font-size: 22px;
+    line-height: 1.45;
+
+    position: absolute;
+    top: 147px;
+    left: 62px;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: default;
+    -webkit-transition: all .6s ease-in;
+            transition: all .6s ease-in;
+    text-align: center;
+
+    opacity: 0;
+    color: rgb(90,194,155);
+    border-radius: 50%;
+}
+#at-plus-container:hover .button{
+    -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+}
+
+/* the specific style of number message botton */
+.number {
+    font-size: 13px;
+    line-height: 1.7;
+
+    position: absolute;
+    top: -5px;
+    left: 22px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    text-align: center;
+
+    opacity: 0;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+}
+
+/* the comman style of control ring button when hover */
+#at-plus-container:hover .button {
+    opacity: 1;
+}
+#at-plus-container:hover #button-A {
+    top: 110px;
+    left: 5px;
+}
+
+/* the detail postions of button elment when hover*/
+#at-plus-container:hover #button-B {
+    top: 146px;
+    left: -6px;
+}
+
+#at-plus-container:hover #button-C {
+    top: 180px;
+    left: 8px;
+}
+
+#at-plus-container:hover .number {
+    opacity: 1;
+}
+
+#at-plus-container:hover #button-D {
+    top: 200px;
+    left: 41px;
+}
+#at-plus-container:hover #button-E {
+    top: 198px;
+    left: 83px;
+}
+
+/* active state*/
+.active {
+    background-color: rgba(48, 63, 159, 1);
+}
+/* positive state*/
+.positive {
+    background-color: rgb(104,104,104);
+}
+.sum-positive {
+    background-color: rgb(126,126,126);
+}
+
+/* s5 */
+.show {
+    height: 20px;
+    width: 225px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(248,66,57);
+    
+}
+#message {
+    position: absolute;
+
+    width: 345px;
+    top: -165px;
+    left: -89px;
+
+    font-size: 30px;
+}
+
+#step {
+    position: absolute;
+    top: -75px;
+    left: -30px;
+    
+    color: rgb(136,136,136);
+    font-size: 28px;
+}
